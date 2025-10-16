@@ -219,9 +219,9 @@ fun DiceGame(
             }
         ) {
             if (isPlayer1.value)
-                Text(text = "Roll the Dice for Player1", color = Color.Black)
+                Text(text = "Roll the Dice for ${player1}", color = Color.Black)
             else
-                Text(text = "Roll the Dice for Player2",color=Color.Black)
+                Text(text = "Roll the Dice for ${player2}",color=Color.Black)
         }
 
         Spacer(modifier = Modifier.padding(16.dp))
