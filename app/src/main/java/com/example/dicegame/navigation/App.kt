@@ -24,7 +24,7 @@ fun NavigationGraph(navController: NavHostController) {
             PlayerNameScreen(navController)
         }
         composable<Routes.DiceGameScreen> { backStackEntry ->
-            val args = backStackEntry.toRoute<Routes.DiceGameScreen>()
+            val args = backStackEntry.toRoute<Routes.DiceGameScreen>() //it convert into object
             DiceGameScreen(
                  navController,
                 Player1 = args.Player1,
